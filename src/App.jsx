@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import './index.css'
+import Blue from './components/Blue'
+import Red from './components/Red'
+import Home from './components/Home'
+import NavBar from './components/NavBar'
 
 function App() {
   
@@ -9,11 +13,12 @@ function App() {
   return (
     <>
       <div id="container">
-        <div id="navbar">{/* navigation here */}</div>
+        <NavBar />
         <div id="main-section">
           <Routes>
-            <Route path='/blue' element={<h1>Blue</h1>} />
-            <Route path='/red' element={<h1>Red</h1>} />
+            <Route path='/' element={<Home />} />
+            <Route path='/blue' element={<Blue />} />
+            <Route path='/red' element={<Red />} />
           </Routes>
         </div>
       </div>

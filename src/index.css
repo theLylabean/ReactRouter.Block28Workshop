@@ -17,6 +17,7 @@ body > div {
 #navbar {
   padding: 2em;
   justify-content: space-evenly;
+  background-color: rgb(116, 116, 116);
 }
 #main-section {
   flex-grow: 1;
@@ -28,10 +29,14 @@ body > div {
   justify-content: center;
 }
 .red {
-  background-color: #b05f6d;
+  background-color: #ff0000;
   color: white;
 }
 .blue {
-  background-color: #275db3;
+  background-color: #0068c4;
   color: white;
+}
+
+.home {
+  background-color: #ff62e8;
 }
